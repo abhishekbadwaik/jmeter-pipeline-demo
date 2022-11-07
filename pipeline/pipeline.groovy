@@ -22,7 +22,7 @@ node {
 
     stage('Execute Performance Tests') {
         dir("${WORKSPACE}/scripts") {
-            sh '/opt/apache-jmeter-5.5/bin/jmeter.sh -n -t Shift-Left.jmx -l Shift-Left.jtl -Joptestvalue=${test_value}'
+            sh '/opt/apache-jmeter-5.5/bin/jmeter.sh -n -t shift-left.jmx -l shift-left.jtl -Joptestvalue=${test_value}'
         }
     }
 
